@@ -13,14 +13,13 @@
     .custom-list li {
       padding: 5px 0;
     }
-    .header-container { /*Flexboxの使用: .header-container クラスに display: flex; を設定し、画像を横並びに配置*/
+    .header-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 10px; /* 画像間の隙間 */
     }
     .header-img {
-      width: 49%;  /*画像のサイズ: .header-img クラスで、画像の幅を 49% に設定し、コンテナ内に2つの画像が均等に並ぶようにしました。
-*/
+      width: 40%; /* 画像のサイズを80%に縮小（元の幅の50%） */
       height: auto;
     }
   </style>
@@ -34,19 +33,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-           <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">ホーム</a>
           </li>
-          
-           <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="#apps">アプリ一覧</a>
           </li>
-          
-         
           <li class="nav-item">
             <a class="nav-link" href="#about">自己紹介</a>
           </li>
-         
         </ul>
       </div>
     </div>
@@ -92,50 +87,41 @@
       </ul>
     </section>
     <section id="apps" class="mt-5">
-       <h2 class="mt-4">アプリの説明</h2>
+      <h2 class="mt-4">アプリの説明</h2>
       <ul class="custom-list">
-         <li><a href="https://github.com/nakata-y/Zero/blob/main/README.md#アプリの説明誤発信zeroとは">誤発信zeroアプリとは？</a></li>
-         <li><a href="https://github.com/nakata-y/Haiku?tab=readme-ov-file#アプリの説明">俳句アプリとは？</a></li>
-       
+        <li><a href="https://github.com/nakata-y/Zero/blob/main/README.md#アプリの説明誤発信zeroとは">誤発信zeroアプリとは？</a></li>
+        <li><a href="https://github.com/nakata-y/Haiku?tab=readme-ov-file#アプリの説明">俳句アプリとは？</a></li>
         <li><a href="https://www.facebook.com/APP.Ichiban/posts/pfbid02b9mwfNHpzVjLn6mmKdBe8wJhSE27AY5NtYxzr2LNj34FZV7XRsNNcYm7EvhBEeWYl">アプリいちばんIchibanとNibanとは？</a></li>
-          </ul>
+      </ul>
 
-       <h2 class="mt-4">アプリ紹介YouTube</h2>
+      <h2 class="mt-4">アプリ紹介YouTube</h2>
       <ul class="custom-list">
-         <li><a href="https://youtu.be/2cwJguDdomI?si=vRRpADFdCiBqykOd">初心者向け簡単テレビ通話＆電話iOSアプリ　「いちばんIchiban」　とは？</a></li>
+        <li><a href="https://youtu.be/2cwJguDdomI?si=vRRpADFdCiBqykOd">初心者向け簡単テレビ通話＆電話iOSアプリ　「いちばんIchiban」　とは？</a></li>
         <li><a href="https://youtu.be/_4UJIkUfkFs?si=JF5zja7zX-f08bSD">電話やFacetimeの誤発信を防ぐ　iOS アプリ「誤発信Zero」とは？</a></li>
-          </ul>
-
-
+      </ul>
     </section>
     
     <section id="about">
       <h1>自己紹介</h1>
       <p>中田　祐子</p>
       <p>退職後、地元三鷹の仲間とホームページや料理の電子ブックを作成やシニア向けiPad講座のお手伝い　ー→　コロナ禍に高齢の母のためのアプリを作ろうとふと。</p>
-       <p>-→ (現在）アプリ4本作成し、iPhoneアプリ制作者の仲間入り？</p>
+      <p>-→ (現在）アプリ4本作成し、iPhoneアプリ制作者の仲間入り？</p>
       <h2 class="mt-4">📱SNS</h2>
       <ul class="custom-list">
         <li><a href="https://twitter.com/Zeroichib" target="_blank">Twitter (Zero俳句)アプリ開発 ときどき俳句</a></li>
         <li><a href="https://www.instagram.com/zero_ichiban_niban/" target="_blank">Instagram (zero_ichiban_niban)アプリ開発　ときどき俳句</a></li>
-           </ul>
-
+      </ul>
       
       <h2 class="mt-4">好きなこと</h2>
       <ul class="custom-list">
         <li>アプリ作成</li>
         <li>俳句</li>
-         <li>旅</li>
-         <li>音楽</li>
+        <li>旅</li>
+        <li>音楽</li>
         <li>料理（祖母　母　からのレシピ　スピード＆捨てないレシピ）</li>
         <li>北欧インテリア</li>
-        
       </ul>
-
-     
     </section>
-
-    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
