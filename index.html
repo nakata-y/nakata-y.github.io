@@ -19,9 +19,13 @@
       gap: 10px; /* 画像間の隙間 */
     }
     .header-img {
-     /*  width: 40%; 画像のサイズを80%に縮小（元の幅の50%） */
-      width: 35%;
+      width: 40%; /* 画像のサイズを80%に縮小（元の幅の50%） */
       height: auto;
+    }
+    .footer-img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -52,7 +56,6 @@
   <div class="container mt-5">
     <div class="header-container">
       <img src="chirashiynakata.png" alt="チラシ表" class="header-img">
-      <img src="chirashiynakataura.png" alt="チラシ裏" class="header-img">
     </div>
   </div>
 
@@ -123,6 +126,11 @@
         <li>北欧インテリア</li>
       </ul>
     </section>
+  </div>
+
+  <!-- ページ末尾に表示される画像 -->
+  <div class="container mt-5">
+    <img src="chirashiynakataura.png" alt="チラシ裏" class="footer-img">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
