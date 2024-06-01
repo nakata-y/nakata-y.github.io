@@ -13,8 +13,13 @@
     .custom-list li {
       padding: 5px 0;
     }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px; /* 画像間の隙間 */
+    }
     .header-img {
-      width: 100%;
+      width: 49%;
       height: auto;
     }
   </style>
@@ -45,16 +50,14 @@
       </div>
     </div>
   </nav>
-<!-- 追加された画像セクション　Flexboxの使用: .header-container クラスに display: flex; を設定し、画像を横並びに配置
-画像間の隙間: gap: 10px; を使用して、画像の間に隙間を設定
-画像のサイズ: .header-img クラスで、画像の幅を 49% に設定し、コンテナ内に2つの画像が均等に並べる -->
+
+  <!-- 追加された画像セクション -->
   <div class="container mt-5">
     <div class="header-container">
       <img src="chirashiynakata.png" alt="チラシ表" class="header-img">
       <img src="chirashiynakataura.png" alt="チラシ裏" class="header-img">
     </div>
   </div>
-
 
   <div class="container mt-5">
     <section id="apps" class="mt-5">
