@@ -14,14 +14,14 @@
       padding: 5px 0;
     }
     .header-img {
-      width: 64%; /* 現在の80%に縮小 */
+      width: 51.2%; /* 現在の80%に縮小 */
       height: auto;
       display: block;
-      margin-left: 0;
+      margin-left: auto;
       margin-right: auto;
     }
     .footer-img {
-      width: 80%; /* 現在の80%に縮小 */
+      width: 64%; /* 現在の80%に縮小 */
       height: auto;
       display: block;
       margin-left: auto;
@@ -30,11 +30,19 @@
     }
     .navbar-brand {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    .navbar-text {
-      margin-left: 20px;
+    .navbar-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .navbar-buttons a {
+      text-decoration: none;
+      color: white;
     }
   </style>
 </head>
@@ -42,24 +50,13 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <div class="navbar-brand">
+        Y.Nakata 中田　アプリ開発 紹介サイト
+        <div class="navbar-buttons">
+          <button class="btn btn-secondary"><a href="#">ホーム</a></button>
+          <button class="btn btn-secondary"><a href="#apps">アプリ一覧</a></button>
+          <button class="btn btn-secondary"><a href="#about">自己紹介</a></button>
+        </div>
         <img src="chirashiynakata.png" alt="チラシ表" class="header-img">
-        <div class="navbar-text">Y.Nakata 中田　アプリ開発 紹介サイト</div>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ホーム</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#apps">アプリ一覧</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">自己紹介</a>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>
