@@ -29,7 +29,8 @@
             margin-bottom: 15px;
         }
         .feature-list, .scene-list {
-            padding-left: 20px;
+            list-style: none;
+            padding-left: 0;
         }
         .feature-list li, .scene-list li {
             margin-bottom: 10px;
@@ -46,40 +47,22 @@
             padding-left: 0;
         }
         .steps li {
-            position: relative;
             margin-bottom: 20px;
-            padding-left: 35px;
         }
-        .steps li::before {
-            counter-increment: step;
+        .steps > li:before {
             content: counter(step);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            line-height: 25px;
-            font-size: 14px;
+            counter-increment: step;
+            margin-right: 10px;
+            color: #2c3e50;
         }
         .sub-steps {
             list-style-type: none;
-            padding-left: 20px;
+            padding-left: 25px;
             margin-top: 10px;
         }
         .sub-steps li {
             margin-bottom: 8px;
-            padding-left: 20px;
             position: relative;
-        }
-        .sub-steps li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #666;
         }
     </style>
 </head>
