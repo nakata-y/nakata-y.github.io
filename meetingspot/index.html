@@ -72,18 +72,29 @@
         }
     </style>
 </head>
+
 <body>
     <h1>MeetingSpot - AIが提案する待ち合わせ場所検索アプリ</h1>
-    
+    <!-- アプリ紹介のヘッダー部分 -->
+<div class="app-header" style="display: flex; align-items: center; margin: 2rem 0;">
+    <img src="images/meetingspot-icon.png" alt="MeetingSpotアイコン" style="width: 60px; height: 60px; margin-right: 1rem;">
+    <h1 style="margin: 0;">MeetingSpot</h1>
+</div>
+
+<!-- メイン説明文（既存の内容） -->
+
     <div class="highlight-pink">
         <p>MeetingSpotは、AIが提案する皆の待ち合わせ場所検索アプリです</p>
         <p>待ち合わせ場所で悩む時間を減らすためのAIを活用します</p>
     
     </div>
+<div class="app-description" style="margin: 2rem 0;">
+    <!-- 既存の説明文をここに -->
 
     <div class="highlight">
         <p>複数の出発地点から最適な待ち合わせ場所を検索し、3つの候補を提案します</p>
     </div>
+</div>
 
     <h2>主な特長</h2>
     <ul class="feature-list">
@@ -135,5 +146,36 @@
             </ul>
         </li>
     </ol>
+    <!-- スクリーンショットセクション -->
+<div class="screenshots-section">
+    <h2 style="margin: 2rem 0;">アプリの使い方</h2>
+    
+    <div class="screenshots-container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin: 2rem 0;">
+        <!-- 初期画面 -->
+        <div class="screenshot-item" style="flex: 1; min-width: 280px; max-width: 350px;">
+            <h3 style="text-align: center; color: #666;">初期画面</h3>
+            <img src="images/screenshot-initial.png" alt="初期画面" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+
+        <!-- 入力例 -->
+        <div class="screenshot-item" style="flex: 1; min-width: 280px; max-width: 350px;">
+            <h3 style="text-align: center; color: #666;">入力例</h3>
+            <img src="images/screenshot-input.png" alt="入力例" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+<style>
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .screenshots-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .screenshot-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+</style>
+
 </body>
 </html>
