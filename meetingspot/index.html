@@ -3,179 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MeetingSpot - AIが提案する待ち合わせ場所検索アプリ</title>
+    <title>MeetingSpot - 複数人の待ち合わせ場所を提案</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
-            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        h2 {
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        .feature-list, .scene-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        .feature-list li, .scene-list li {
-            margin-bottom: 10px;
-        }
+
         .highlight {
-            background-color: #f8f9fa;
+            background-color: #ffe6e6;
             padding: 15px;
             border-radius: 5px;
-            margin: 15px 0;
+            margin: 20px 0;
         }
-        .highlight-pink {
-            background-color: #FFE6E6;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
         }
-        .steps {
-            counter-reset: step;
-            list-style-type: none;
-            padding-left: 0;
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
         }
-        .steps li {
-            margin-bottom: 20px;
+
+        .screenshots-section {
+            margin: 3rem 0;
         }
-        .steps > li:before {
-            content: counter(step);
-            counter-increment: step;
-            margin-right: 10px;
-            color: #2c3e50;
+
+        .screenshots-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
         }
-        .sub-steps {
-            list-style-type: none;
-            padding-left: 25px;
-            margin-top: 10px;
+
+        .screenshot-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
         }
-        .sub-steps li {
-            margin-bottom: 8px;
-            position: relative;
+
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .screenshot-item h3 {
+            text-align: center;
+            color: #666;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin-right: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .screenshots-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .screenshot-item {
+                width: 100%;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
-
 <body>
-    <h1>MeetingSpot - AIが提案する待ち合わせ場所検索アプリ</h1>
-    <!-- アプリ紹介のヘッダー部分 -->
-<div class="app-header" style="display: flex; align-items: center; margin: 2rem 0;">
-    <img src="images/meetingspot-icon.png" alt="MeetingSpotアイコン" style="width: 60px; height: 60px; margin-right: 1rem;">
-    <h1 style="margin: 0;">MeetingSpot</h1>
-</div>
+    <!-- ナビゲーション -->
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="support.html">サポート</a>
+    </nav>
 
-<!-- メイン説明文（既存の内容） -->
-
-    <div class="highlight-pink">
-        <p>MeetingSpotは、AIが提案する皆の待ち合わせ場所検索アプリです</p>
-        <p>待ち合わせ場所で悩む時間を減らすためのAIを活用します</p>
-    
+    <!-- アプリヘッダー -->
+    <div class="app-header">
+        <img src="images/meetingspot-icon.png" alt="MeetingSpotアイコン" class="app-icon">
+        <h1>MeetingSpot</h1>
     </div>
-<div class="app-description" style="margin: 2rem 0;">
-    <!-- 既存の説明文をここに -->
 
+    <!-- メイン説明文 -->
     <div class="highlight">
-        <p>複数の出発地点から最適な待ち合わせ場所を検索し、3つの候補を提案します</p>
-    </div>
-</div>
-
-    <h2>主な特長</h2>
-    <ul class="feature-list">
-        <li>2人から複数人対応の待ち合わせ場所検索</li>
-        <li>全員の移動時間を考慮した公平な場所選び</li>
-        <li>時間帯に応じた営業中の場所を優先提案</li>
-        <li>シンプルで直感的な操作性</li>
-        <li>プライバシーに配慮（位置情報は検索時のみ使用。個人情報の保存なし）</li>
-    </ul>
-
-    <h2>活用シーン</h2>
-    <ul class="scene-list">
-        <li>友人との待ち合わせ</li>
-        <li>ビジネスでの打ち合わせ</li>
-        <li>サークル活動の集合</li>
-        <li>デートや家族での外出時</li>
-    </ul>
-
-    <div class="highlight">
-        <p>AIが選ぶベストな待ち合わせ場所で、楽しい時間を！</p>
-        <p>※　提案された場所へのルートは、普段お使いの地図アプリやウェブサービスで　ご確認下さい</p>
+        複数の出発地点から、全員にとって公平な待ち合わせ場所を提案するアプリです。
+        駅名を入力し、待ち合わせ時間を選ぶだけで、移動時間がほぼ等しくなる候補地を表示します。
     </div>
 
-    <h2>簡単な使用方法</h2>
-    <ol class="steps">
-        <li>参加者の出発地点を入力
-            <ul class="sub-steps">
-                <li>最低2名から入力可能</li>
-                <li>必要に応じて参加者を追加（＋ボタンで簡単追加）</li>
-                <li>不要な参加者は削除可能（最低2名は必須）</li>
-            </ul>
-        </li>
-        <li>待ち合わせ時間を設定
-            <ul class="sub-steps">
-                <li>日付と時間をホイール選択で簡単設定</li>
-                <li>現在時刻から未来の時間を指定可能</li>
-            </ul>
-        </li>
-        <li>「待ち合わせ場所を探す」ボタンをタップ
-            <ul class="sub-steps">
-                <li>AIが最適な待ち合わせ場所を検索</li>
-                <li>処理中はローディング表示で状態を確認可能</li>
-            </ul>
-        </li>
-        <li>提案された場所から選択
-            <ul class="sub-steps">
-                <li>カフェや駅などの候補から最適な場所を選択</li>
-                <li>気に入らない場合は再検索可能</li>
-            </ul>
-        </li>
-    </ol>
+    <p>
+        提案された場所へのルートは、普段お使いの地図アプリやウェブサービスでご確認下さい。
+    </p>
+
     <!-- スクリーンショットセクション -->
-<div class="screenshots-section">
-    <h2 style="margin: 2rem 0;">アプリの使い方</h2>
-    
-    <div class="screenshots-container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin: 2rem 0;">
-        <!-- 初期画面 -->
-        <div class="screenshot-item" style="flex: 1; min-width: 280px; max-width: 350px;">
-            <h3 style="text-align: center; color: #666;">初期画面</h3>
-            <img src="images/screenshot-initial.png" alt="初期画面" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </div>
+    <div class="screenshots-section">
+        <h2>アプリの使い方</h2>
+        
+        <div class="screenshots-container">
+            <!-- 初期画面 -->
+            <div class="screenshot-item">
+                <h3>初期画面</h3>
+                <img src="images/screenshot-initial.png" alt="初期画面">
+            </div>
 
-        <!-- 入力例 -->
-        <div class="screenshot-item" style="flex: 1; min-width: 280px; max-width: 350px;">
-            <h3 style="text-align: center; color: #666;">入力例</h3>
-            <img src="images/screenshot-input.png" alt="入力例" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <!-- 入力例 -->
+            <div class="screenshot-item">
+                <h3>入力例</h3>
+                <img src="images/screenshot-input.png" alt="入力例">
+            </div>
+
+            <!-- 回答例 -->
+            <div class="screenshot-item">
+                <h3>検索結果例</h3>
+                <img src="images/screenshot-result.png" alt="検索結果例">
+            </div>
         </div>
-<style>
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-    .screenshots-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .screenshot-item {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-</style>
+    </div>
 
 </body>
 </html>
