@@ -69,8 +69,40 @@
     align-items: center;
     margin: 1rem 0;
 }
-    </style>
+
+
+        .screenshots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 1200px; /* コンテナの最大幅を設定 */
+}
+
+.screenshot-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px; /* 各アイテムの最大幅を制限 */
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: contain; /* アスペクト比を保持 */
+}
+
+.screenshot-item .caption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+        
+　</style>
 </head>
+    
 <body>
     <!-- 以下のHTML構造は全て変更なし -->
     <nav>
